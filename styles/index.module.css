@@ -1,0 +1,166 @@
+.main {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  max-height: 100vh;
+  background: url("https://images.unsplash.com/photo-1566410845311-1201aefbee6a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-y: hidden;
+}
+
+.submain {
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.submain h2 {
+  text-align: center;
+  font-size: 60px;
+  font-family: "Encode Sans Condensed";
+  text-transform: uppercase;
+  margin: 0;
+  color: #030303;
+  text-shadow: 0 0 5px maroon;
+}
+.submain h2 span {
+  text-shadow: 0 0 1px rgb(228, 8, 8);
+  cursor: pointer;
+  transition: all ease 0.2s;
+}
+.submain h2 span:hover {
+  text-shadow: 0 0 10px rgb(228, 8, 8);
+}
+
+.register_button {
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  font-size: 1.5em;
+  margin: 1em;
+  background-color: #100720;
+  padding: 15px 20px;
+  border-radius: 8px;
+  transition: all ease 0.2s;
+}
+
+/* CSS */
+.register_button,
+.register_button:after {
+  width: 250px;
+  height: 96px;
+  line-height: 78px;
+  font-size: 20px;
+  font-weight: 700;
+  /* font-family: "Bebas Neue", sans-serif; */
+  background: linear-gradient(45deg, transparent 5%, #a3012700 5%);
+  border: 0;
+  color: rgb(54, 25, 25);
+  text-shadow: 0 2px 5px red;
+  letter-spacing: 3px;
+  /* box-shadow: 6px 0px 0px #00e6f6; */
+  outline: transparent;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.register_button:after {
+  --slice-0: inset(50% 50% 50% 50%);
+  --slice-1: inset(80% -6px 0 0);
+  --slice-2: inset(50% -6px 30% 0);
+  --slice-3: inset(10% -6px 85% 0);
+  --slice-4: inset(40% -6px 43% 0);
+  --slice-5: inset(80% -6px 5% 0);
+
+  content: "BETTER KILL NIE";
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 15px;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    45deg,
+    transparent 3%,
+    #46270d00 3%,
+    #14282a00 5%,
+    #cd003000 5%
+  );
+  text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px #00e6f6;
+  clip-path: var(--slice-0);
+  border-radius: 8px;
+}
+
+.register_button:hover:after {
+  animation: 1s glitch;
+  animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+  0% {
+    clip-path: var(--slice-1);
+    transform: translate(-20px, -10px);
+  }
+  10% {
+    clip-path: var(--slice-3);
+    transform: translate(10px, 10px);
+  }
+  20% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 10px);
+  }
+  30% {
+    clip-path: var(--slice-3);
+    transform: translate(0px, 5px);
+  }
+  40% {
+    clip-path: var(--slice-2);
+    transform: translate(-5px, 0px);
+  }
+  50% {
+    clip-path: var(--slice-3);
+    transform: translate(5px, 0px);
+  }
+  60% {
+    clip-path: var(--slice-4);
+    transform: translate(5px, 10px);
+  }
+  70% {
+    clip-path: var(--slice-2);
+    transform: translate(-10px, 10px);
+  }
+  80% {
+    clip-path: var(--slice-5);
+    transform: translate(20px, -10px);
+  }
+  90% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 0px);
+  }
+  100% {
+    clip-path: var(--slice-1);
+    transform: translate(0);
+  }
+}
+
+.login {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .button-49,
+  .button-49:after {
+    width: 200px;
+    height: 86px;
+    line-height: 88px;
+  }
+}

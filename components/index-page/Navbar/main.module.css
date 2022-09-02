@@ -1,0 +1,46 @@
+.submain {
+  position: relative;
+  color: white;
+  display: flex;
+  flex-flow: row;
+  padding: 10px 20px 5px 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.menu_icon {
+  position: relative;
+}
+
+.menu_icon input {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.hidden_menu {
+  height: fit-content;
+  display: flex;
+  flex-flow: column;
+}
+
+.hidden_menu p {
+  display: block;
+  margin: 0;
+  padding: 5px 20px;
+  border-bottom: solid 1px black;
+  transition: all ease 1s;
+}

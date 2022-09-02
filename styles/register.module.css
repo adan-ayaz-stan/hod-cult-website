@@ -1,0 +1,230 @@
+.main {
+  height: 100vh;
+  background: url("https://images.unsplash.com/photo-1565502233244-0b40001723d9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  height: fit-content;
+  width: 400px;
+  background-color: rgba(255, 255, 255, 0.13);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+  padding: 50px 35px;
+}
+.form * {
+  font-family: "Poppins", sans-serif;
+  color: #ca4646;
+  letter-spacing: 0.5px;
+  outline: none;
+  border: none;
+}
+.form h3 {
+  font-family: "Encode Sans Condensed";
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 42px;
+  text-align: center;
+}
+
+.form label {
+  display: block;
+  margin-top: 30px;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 400;
+}
+.form input {
+  display: block;
+  height: 50px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.07);
+  border-radius: 3px;
+  padding: 0 10px;
+  margin-top: 8px;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 400;
+}
+.form button {
+  margin-top: 50px;
+  width: 100%;
+  background-color: #160202;
+  color: #b65252;
+  padding: 15px 0;
+  font-family: "Encode Sans Condensed";
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.social {
+  margin-top: 30px;
+  display: flex;
+}
+.social div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: red;
+  width: 50%;
+  border-radius: 3px;
+  padding: 5px 10px 10px 5px;
+  background-color: rgba(255, 255, 255, 0.27);
+  color: #eaf0fb;
+  text-align: center;
+}
+.social div:hover {
+  background-color: rgba(255, 255, 255, 0.47);
+}
+
+.decorator_text_1 {
+  width: 30%;
+  position: absolute;
+  bottom: 15%;
+  right: 5%;
+  font-family: "Montserrat";
+  transform: translate(0%, -50%) rotate(7deg);
+  pointer-events: none;
+}
+.decorator_text_1 h2 {
+  text-align: right;
+  margin: 0;
+  color: rgb(8, 8, 8);
+  text-transform: uppercase;
+  text-shadow: 0 0 5px rgb(71, 1, 1);
+  animation: flicker 25s linear infinite;
+}
+.decorator_text_2 {
+  width: 40%;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  font-family: "Montserrat";
+  transform: translate(0%, -50%) rotate(-10deg);
+  pointer-events: none;
+}
+.decorator_text_2 h2 {
+  margin: 0;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  text-shadow: 0 0 5px rgb(71, 1, 1);
+  animation: flicker 25s linear infinite reverse;
+}
+
+@keyframes flicker {
+  0% {
+    text-shadow: 0 0 5px rgb(71, 1, 1);
+  }
+
+  10% {
+    text-shadow: 0 0 5px red;
+  }
+
+  13% {
+    text-shadow: 0 0 5px rgb(142, 11, 11);
+  }
+
+  18% {
+    text-shadow: 0 0 5px rgb(71, 1, 1);
+  }
+
+  27% {
+    text-shadow: 0 0 5px rgb(28, 8, 8);
+  }
+
+  30% {
+    text-shadow: 0 0 5px rgb(255, 0, 0);
+  }
+
+  33% {
+    text-shadow: 0 0 5px rgb(71, 1, 1);
+  }
+  36% {
+    text-shadow: 0 0 5px rgb(71, 1, 1);
+  }
+
+  45% {
+    text-shadow: 0 0 5px red;
+  }
+
+  48% {
+    text-shadow: 0 0 5px rgb(142, 11, 11);
+  }
+
+  58% {
+    text-shadow: 0 0 5px rgb(71, 1, 1);
+  }
+
+  62% {
+    text-shadow: 0 0 5px rgb(28, 8, 8);
+  }
+
+  67% {
+    text-shadow: 0 0 5px rgb(255, 0, 0);
+  }
+
+  70% {
+    text-shadow: 0 0 5px rgb(71, 1, 1);
+  }
+  74% {
+    text-shadow: 0 0 5px rgb(71, 1, 1);
+  }
+
+  79% {
+    text-shadow: 0 0 5px red;
+  }
+
+  84% {
+    text-shadow: 0 0 5px rgb(142, 11, 11);
+  }
+
+  86% {
+    text-shadow: 0 0 5px rgb(71, 1, 1);
+  }
+
+  89% {
+    text-shadow: 0 0 5px rgb(28, 8, 8);
+  }
+
+  92% {
+    text-shadow: 0 0 5px rgb(255, 0, 0);
+  }
+
+  96% {
+    text-shadow: 0 0 5px rgb(71, 1, 1);
+  }
+
+  100% {
+    text-shadow: 0 0 8px #3c0000;
+  }
+}
+
+.error {
+  display: flex;
+  padding: 3px;
+  color: maroon;
+  animation: errorAnimation 0.6s ease;
+}
+
+@keyframes errorAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

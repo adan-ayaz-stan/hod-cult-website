@@ -1,0 +1,80 @@
+.main {
+  flex: 80%;
+  background-color: rgba(0, 0, 0, 0.18);
+  border-right: 5px solid maroon;
+  border-left: 5px solid maroon;
+  border-radius: 8px;
+  margin: 30px 50px;
+  padding: 20px 15px;
+}
+.main h2 {
+  font-family: "Montserrat";
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 0px 0px 20px black;
+}
+
+.info_box {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 1em;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px red;
+}
+
+.mission_box {
+  background-color: rgba(0, 0, 0, 0.823);
+  border-radius: 8px;
+  border-left: 5px solid maroon;
+  border-right: 5px solid maroon;
+  /* text-shadow: 0 0 5px red; */
+}
+.mission_box h2 {
+  padding-top: 10px;
+  text-shadow: 0 0 5px red;
+}
+.mission_box p {
+  color: rgb(145, 35, 35);
+  padding: 10px 15px;
+}
+
+.news_box {
+  min-height: 100px;
+  height: fit-content;
+  max-height: 300px;
+  background-color: rgba(0, 0, 0, 0.823);
+  border-radius: 8px;
+  border-left: 5px solid maroon;
+  border-right: 5px solid maroon;
+  padding-bottom: 10px;
+  overflow-y: auto;
+  /* text-shadow: 0 0 5px red; */
+}
+.news_box h2 {
+  height: 100%;
+  color: orange;
+  padding: 10px 0;
+  text-shadow: 0 0 5px red;
+}
+
+.news_box_entity {
+  margin: 10px 20px;
+  padding: 0 5px;
+  border-radius: 8px;
+  border-left: 5px solid maroon;
+  border-right: 5px solid maroon;
+  padding: 5px 5px;
+}
+
+.news_box_entity h3 {
+  color: purple;
+  font-family: "Montserrat";
+  font-weight: 400;
+  margin: 5px 0;
+}
+.news_box_entity p {
+  color: rgba(217, 255, 0, 0.64);
+  margin: 0;
+  padding-left: 20px;
+}
