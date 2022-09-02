@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import styles from "../styles/index.module.css";
 
@@ -15,6 +15,19 @@ import { useRouter } from "next/router";
 const Home: NextPage = () => {
   const preRequisteRecoilValue = useRecoilValue(preRequisteDone);
   const router = useRouter();
+
+  async function approvalCookieSetter() {
+    const data = await fetch("/api/passcodeapproval").then((data) =>
+      data.json()
+    );
+    console.log(data);
+  }
+
+  useEffect(() => {
+    if (preRequisteRecoilValue) {
+      approvalCookieSetter();
+    }
+  });
 
   return (
     <div className={styles.main}>
