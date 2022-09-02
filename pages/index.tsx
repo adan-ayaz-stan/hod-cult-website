@@ -24,7 +24,7 @@ const Home: NextPage = () => {
   }
 
   useEffect(() => {
-    if (preRequisteRecoilValue) {
+    if (preRequisteRecoilValue == true) {
       approvalCookieSetter();
     }
   });
