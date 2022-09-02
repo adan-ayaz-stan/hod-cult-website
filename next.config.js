@@ -5,6 +5,9 @@ const nextConfig = {
   images: {
     domains: ["www.logodesign.net"],
   },
+  typescript: {
+  ignoreBuildErrors: true
+  }
 };
 
 module.exports = nextConfig;
