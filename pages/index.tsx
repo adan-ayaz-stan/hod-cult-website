@@ -10,9 +10,11 @@ import Navbar from "../components/index-page/Navbar/Navbar";
 import Heading from "../components/index-page/Heading/Heading";
 import { useRecoilValue } from "recoil";
 import { preRequisteDone } from "../atoms/login-prerequiste";
+import { useRouter } from "next/router";
 
 const Home: NextPage = () => {
   const preRequisteRecoilValue = useRecoilValue(preRequisteDone);
+  const router = useRouter();
 
   return (
     <div className={styles.main}>
@@ -36,11 +38,11 @@ const Home: NextPage = () => {
 
       <div className={styles.login}>
         {preRequisteRecoilValue == true ? (
-          <a href="/login">
+          <div onClick={() => router.push("/login")}>
             <GiTempleDoor
               style={{ height: "40px", width: "40px", cursor: "pointer" }}
             />
-          </a>
+          </div>
         ) : (
           <GiDoorway style={{ height: "40px", width: "40px" }} />
         )}

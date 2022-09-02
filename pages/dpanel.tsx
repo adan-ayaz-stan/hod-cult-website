@@ -9,7 +9,13 @@ import { firestore } from "../firebase.config";
 
 import styles from "../styles/dpanel.module.css";
 
-const DPanel: NextPage = (props) => {
+interface PropsData {
+  userData: {
+    name: string;
+  }
+}
+
+const DPanel: NextPage<PropsData> = (props) => {
   const data = props.userData;
 
   return (
