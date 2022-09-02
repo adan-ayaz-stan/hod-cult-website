@@ -14,15 +14,6 @@ const firebaseConfig = {
   appId: process.env.FIREBASE_APPID,
 };
 
-// const firebaseConfig = {
-//   apiKey: "AIzaSyDlw-rfS2V8pS9BGKWfxeS3fhZsu1UQs3I",
-//   authDomain: "portfolio-01-project-cult.firebaseapp.com",
-//   projectId: "portfolio-01-project-cult",
-//   storageBucket: "portfolio-01-project-cult.appspot.com",
-//   messagingSenderId: "407129336215",
-//   appId: "1:407129336215:web:2e39735dfa0648f79ebcd2",
-// };
-
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 export const firestore = getFirestore(app);
