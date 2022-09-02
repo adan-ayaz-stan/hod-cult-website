@@ -17,9 +17,14 @@ const Home: NextPage = () => {
   const router = useRouter();
 
   async function approvalCookieSetter() {
-    const data = await fetch("/api/passcodeapproval").then((data) =>
-      data.json()
-    );
+    const data = await fetch("/api/passcodeapproval", {
+      credentials: "include", // to send httpOnly cockie
+      headers: {
+        "Content-Type": "application/json",
+        "Access-Control-Allow-Credentials": true,
+      },
+      method: "POST",
+    }).then((data) => data.json());
     console.log(data);
   }
 
