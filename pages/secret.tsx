@@ -42,7 +42,7 @@ const Secret: NextPage = () => {
 export const getServerSideProps: GetServerSideProps = async (context) => {
   try {
     const cookie = context.req.cookies.scrt;
-    const validate = verify(cookie, "wepreachbeneaththestars");
+    const validate = verify(`${cookie}`, "wepreachbeneaththestars");
     if (validate) {
       return {
         props: {},

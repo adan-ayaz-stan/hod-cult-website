@@ -12,7 +12,7 @@ import styles from "../styles/dpanel.module.css";
 interface PropsData {
   userData: {
     name: string;
-  }
+  };
 }
 
 const DPanel: NextPage<PropsData> = (props) => {
@@ -51,7 +51,7 @@ export const getServerSideProps: GetServerSideProps = async (context: any) => {
     const cookie = context.req.cookies.usrdt;
     const validate = verify(cookie, "wepreachbeneaththestars");
     console.log(validate);
-    const ref = doc(firestore, "users", validate);
+    const ref = doc(firestore, "users", `${validate}`);
     const data = await getDoc(ref);
     if (data.exists()) {
       return {
@@ -63,7 +63,7 @@ export const getServerSideProps: GetServerSideProps = async (context: any) => {
       return {
         redirect: {
           destination: "/",
-          permanent: "false",
+          permanent: false,
         },
       };
     }
