@@ -1,3 +1,5 @@
+### The key to the index page is N(of NOTHING) EVER(of REVERED) B(of BE) I(of IT'S) 'S(of IT'S) GLORY.(of the last word GLORY. period included.)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
