@@ -1,4 +1,5 @@
 ### The key to the index page is N(of NOTHING) EVER(of REVERED) B(of BE) I(of IT'S) 'S(of IT'S) GLORY.(of the last word GLORY. period included.)
+## Another thing to note is that the gate in the right most bottom corner opens for a limited seconds. (This might sound weird but I was just making this look like a wannabe 'secret code and you can enter our abode'. Not a real world thing xd.
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
